@@ -8,11 +8,11 @@ public class ProductsPage extends BasePage{
 
 private final By TITLE = By.cssSelector(".title");
 
-public ProductPage(WebDriver driver) {
-    super(driver);
-}
+    public ProductsPage(WebDriver driver) {
+        super(driver);
+    }
 
-public WebElement getTitle () {
+    public WebElement getTitle () {
     return driver.findElement(TITLE);
 }
 }
