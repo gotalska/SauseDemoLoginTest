@@ -4,8 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class LoginPage {
-    WebDriver driver;
+public class LoginPage extends BasePage {
 
     private final By userNameInput = By.id("user-name");
     private final By passwordInput = By.id("password");
@@ -13,7 +12,7 @@ public class LoginPage {
     private final By error = By.cssSelector("h3[data-test=error]");
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void open() {
