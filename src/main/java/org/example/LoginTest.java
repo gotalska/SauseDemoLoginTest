@@ -12,8 +12,6 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void userCanLoginWithValidData() {
-        String price = "$29.99";
-        String name = "Sauce Labs Backpack";
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com");
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
